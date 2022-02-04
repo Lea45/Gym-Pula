@@ -16,7 +16,7 @@ ovdje ce ici link od stranice
 (kopacak@unipu.hr)
 
 - Lea Varžić 
-(lea.varzic@unipu.hr)
+(lvarzic@unipu.hr)
 ```
 
 ### Prototip aplikacije na Figmi:
@@ -30,7 +30,7 @@ Funkcija oplikacije je da olakša interakciju između klijenta i teretana na na�
 ### Org.
 ```
 Sveučilište Jurja Dobrile u Puli
-Fakultet informatike u Puli
-kolegij: programsko inžinjerstvo
-Profesor: Nikola Tanković.
+Fakultet Informatike u Puli
+Kolegij: Programsko inženjerstvo
+Profesor: Nikola Tanković
 ```
