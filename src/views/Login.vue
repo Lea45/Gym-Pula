@@ -2,7 +2,59 @@
   <div class="gumb-content">
     <h2>Prijavi se!</h2>
 
+<!-- ---------------------------------------------------------- Raspored ---------------------------------------------------------------->
 
+<table >
+        <tr>
+          <th>Treninzi</th>
+          <th>Ponedjeljak</th>
+          <th>Utorak</th>
+          <th>Srijeda</th>
+          <th>Četvrtak</th>
+          <th>Petak</th>
+          <th>Subota</th>
+        </tr>
+
+        <tr>
+            <td> Cikularni </td>
+            <td> 19:00 </td>
+            <td> 19:00 </td>
+            <td> / </td>
+            <td> 19:00 </td>
+            <td> 19:00 </td>
+            <td> 19:00 </td>
+        </tr>
+        
+        <tr>
+            <td> Standardni </td>
+            <td> 17:00 </td>
+            <td> 17:00 </td>
+            <td> / </td>
+            <td> 17:00 </td>
+            <td> 17:00 </td>
+            <td> / </td>
+        </tr>
+
+        <tr>
+            <td> Cijelo tijelo </td>
+            <td> / </td>
+            <td> 09:00 </td>
+            <td> 09:00 </td>
+            <td> / </td>
+            <td> 09:00 </td>
+            <td> 09:00 </td>
+        </tr>
+
+        <tr>
+            <td> Gluteus </td>
+            <td> 12:00 </td>
+            <td> / </td>
+            <td> 12:00 </td>
+            <td> / </td>
+            <td> 12:00 </td>
+            <td> / </td>
+      </tr>
+    </table>
 
 
     <!-- ---------------------------------------------------------- LOGIN FORM ---------------------------------------------------------------->
