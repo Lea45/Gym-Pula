@@ -1,3 +1,15 @@
+ /*----------------------------- Raspored ------------------------------ */
+table,th, td {
+  border: 3px solid orange;
+  color: black;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+}
+ 
+
  /*----------------------------- LOGIN FORM ------------------------------ */
  .gumb-content {
     text-align: center;
@@ -8,17 +20,6 @@
     padding: 12px 20px;
     margin: 10px;
     border: 1px solid #ccc;
-  }
-  
-  table,th, td {
-    border:3px solid orange;
-    color: white;
-    margin: auto;
-    backdrop-filter: blur(10px);
-    border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding: 10px;
   }
 
   button {
