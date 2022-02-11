@@ -1,3 +1,9 @@
+* {
+	margin: 0%;
+	
+}
+	
+
 .title-image {
     display: block;
     margin-left: auto;
@@ -124,11 +130,11 @@
 	color:  #92999f;
 	font-size: 13px;
 	font-weight: normal;
-	margin: 0;
+	
 }
 
 .footer-container .footer-company-about span{
-	display: block;
+	
 	color:  #ffffff;
 	font-size: 14px;
 	font-weight: bold;
@@ -140,7 +146,7 @@
 }
 
 .footer-container .footer-icons a{
-	display: inline-block;
+	
 	width: 100;
 	cursor: pointer;
 }
@@ -169,7 +175,7 @@
 	}
 
 	.footer-container .footer-center i{
-		margin-left: 0;
+		margin-right: 0;
 	}
 
 }
