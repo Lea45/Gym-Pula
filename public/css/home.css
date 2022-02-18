@@ -1,22 +1,21 @@
-.pocetna {
-    padding: 20px;
-    width: 200px;
-    margin: auto;
-    text-align: center;
+.images-container {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px 0;
 }
 
-.pocetna-container {
-    backdrop-filter: blur(20px);
-    border-radius: 25px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-	clip-path: square;
-    color: white;
-    font-size:20px;
-    padding: 10px;
-}
-
-.pocetna-container a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
+.img {
+	width: 150px;
+	height: 200px;
+	margin: 30px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(20px);
+  }
