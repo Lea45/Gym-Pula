@@ -1,36 +1,18 @@
 <template>
-<div class="pocetna">
 
-<div class="pocetna-container">
-    <a href="#">
-        <p> O NAMA </p>
-    </a>
-</div>
+<div class="images-container">
+  <div class="img">
+    <img src="images/home/gym1.png">
+  </div>
 
-<div class="pocetna-container">
-    <a href="#">
-        <p> PROGRAMI </p>
-    </a>
-</div>
+  <div class="img">
+    <img src="images/home/gym2.png">
+  </div>
 
-<div class="pocetna-container">
-<a href="#">
-    <p> SAVJETI </p>
-</a>
-</div>
-
-<div class="pocetna-container">
-<a href="#">
-    <p> KONTAKT </p>
-</a>
-</div>
-
-<div class="pocetna-container">
-<a href="#">
-    <p> PRIIJAVI SE </p>
-</a>
-</div>
-
+  <div class="img">
+    <img src="images/home/gym3.png">
+  </div>
+  
 </div>
 
 </template>
