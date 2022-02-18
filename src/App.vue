@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Početna</router-link> |
+      <router-link to="/programs">Programi</router-link> |
+      <router-link to="/about">O nama</router-link> |
+      <router-link to="/advicess">Savjeti</router-link> |
+      <router-link to="/contact">Kontakt</router-link> |
       <router-link to="/login">Prijava</router-link>
     </div>
     <router-view/>
