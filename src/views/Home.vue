@@ -3,15 +3,15 @@
 
 <div class="images-container">
   <div class="img">
-    <img src="images/home/gym1.png">
+    <img src="images/home/gym1.jpeg">
   </div>
 
   <div class="img">
-    <img src="images/home/gym2.png">
+    <img src="images/home/gym2.jpeg">
   </div>
 
   <div class="img">
-    <img src="images/home/gym3.png">
+    <img src="images/home/gym3.jpeg">
   </div>
   
 </div>
