@@ -69,14 +69,14 @@
     <!-- ---------------------------------------------------------- close modal (x) ---------------------------------------------------------------->
         <div class="imgcontainer"> 
          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="images/dumbell.jpg" alt="dumbell" class="dumbell">
+          <img src="images/login.jpg" alt="dumbell" class="dumbell">
         </div>
 
 
 
     <!-- ------------------------------------------------------- korisničko ime / e-mail ---------------------------------------------------------------->
         <div class="container">
-          <label for="uname"><b>Kor.ime</b></label>
+          <label for="uname"><b>Korisničko ime</b></label>
           <input type="text" placeholder="Unesi e-mail ili korisničko ime.." name="uname" required> <br>
 
 
@@ -111,3 +111,5 @@
 </div>
 
 </template>
+
+
