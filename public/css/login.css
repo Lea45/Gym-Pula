@@ -51,7 +51,7 @@ button:hover {
   position: relative;
 }
 
-img {
+.imgcontainer img {
   width: 25%;
   border-radius: 50%;
 }
