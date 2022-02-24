@@ -3,17 +3,17 @@
     background:#fff;
   }
 
-  ul,li{
+ .about ul,li{
     list-style:none;
   }
 
-  ul{
+  .about ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  ul li a{
+  .about ul li a{
     text-decoration:none;
     color:black;
     background:#ffc;
@@ -26,33 +26,33 @@
     transition: transform .15s linear;
   }
   
-  ul li:nth-child(even) a{
+  .about ul li:nth-child(even) a{
     transform:rotate(4deg);
     position:relative;
     top:5px;
     background:#cfc;
   }
 
-  ul li:nth-child(3n) a{
+ .about ul li:nth-child(3n) a{
     transform:rotate(-3deg);
     position:relative;
     top:-5px;
     background:#ccf;
   }
   
-  ul li:nth-child(5n) a{
+ .about ul li:nth-child(5n) a{
     transform:rotate(5deg);
     position:relative;
     top:-10px;
   }
   
-  ul li a:hover,ul li a:focus{
+  .about ul li a:hover,ul li a:focus{
     box-shadow:10px 10px 7px rgba(0,0,0,.7);
     transform: scale(1.25);
     position:relative;
     z-index:5;
   }
   
-  ul li{
+  .about ul li{
     margin:1em;
   }
