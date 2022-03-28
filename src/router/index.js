@@ -44,6 +44,37 @@ const routes = [
     name: 'Login',
     component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
   },
+
+  {
+    path: '/CircularH',
+    name: 'CircularH',
+    component: () => import(/* webpackChunkName: "about" */ '../views/CircularH.vue')
+  },
+
+  {
+    path: '/StandardG',
+    name: 'StandardG',
+    component: () => import(/* webpackChunkName: "about" */ '../views/StandardG.vue')
+  },
+
+  {
+    path: '/GluteusG',
+    name: 'GluteusG',
+    component: () => import(/* webpackChunkName: "about" */ '../views/GluteusG.vue')
+  },
+
+  {
+    path: '/StandardH',
+    name: 'StandardH',
+    component: () => import(/* webpackChunkName: "about" */ '../views/StandardH.vue')
+  },
+
+  {
+    path: '/GluteusG',
+    name: 'GluteusG',
+    component: () => import(/* webpackChunkName: "about" */ '../views/GluteusG.vue')
+  },
+
 ]
 
 const router = new VueRouter({

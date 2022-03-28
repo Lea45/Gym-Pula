@@ -9,7 +9,7 @@
             </div>
             <ul class="sci">
                 <li>
-                    <a href="#">VIDI VIŠE</a>
+                    <a href="CircularH">VIDI VIŠE</a>
                 </li>
             </ul>
         </div>
@@ -22,7 +22,7 @@
             </div>
             <ul class="sci">
                 <li>
-                    <a href="#">VIDI VIŠE</a>
+                    <a href="StandardG">VIDI VIŠE</a>
                 </li>
             </ul>
         </div>
@@ -35,7 +35,7 @@
             </div>
             <ul class="sci">
                 <li>
-                    <a href="#">VIDI VIŠE</a>
+                    <a href="GluteusG">VIDI VIŠE</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +48,7 @@
             </div>
             <ul class="sci">
                 <li>
-                    <a href="#">VIDI VIŠE</a>
+                    <a href="StandardH">VIDI VIŠE</a>
                 </li>
             </ul>
         </div>
@@ -61,7 +61,7 @@
             </div>
             <ul class="sci">
                 <li>
-                    <a href="#">VIDI VIŠE</a>
+                    <a href="GluteusH">VIDI VIŠE</a>
                 </li>
             </ul>
         </div>
