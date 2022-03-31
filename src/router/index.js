@@ -70,11 +70,11 @@ const routes = [
   },
 
   {
-    path: '/GluteusG',
-    name: 'GluteusG',
-    component: () => import(/* webpackChunkName: "about" */ '../views/GluteusG.vue')
+    path: '/GluteusH',
+    name: 'GluteusH',
+    component: () => import(/* webpackChunkName: "about" */ '../views/GluteusH.vue')
   },
-
+  
 ]
 
 const router = new VueRouter({

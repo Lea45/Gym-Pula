@@ -1,0 +1,35 @@
+.trening {
+    backdrop-filter: blur(35px);
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+	text-align:center;
+    color: black;
+    font-weight: bold;
+    font-size:20px;
+	margin: 10px;
+	padding: 30px 10px 30px 10px;
+}
+
+.login {
+	position: absolute;
+	bottom: 10px;
+	left: 500px;
+}
+
+.login li {
+	list-style: none;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+ .trening:hover .login li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.login li a {
+	color: #FF9633;
+    font-weight: bolder;
+    text-decoration: none;
+   
+}
