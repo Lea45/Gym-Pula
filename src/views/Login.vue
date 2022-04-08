@@ -77,18 +77,18 @@
     <!-- ------------------------------------------------------- korisničko ime / e-mail ---------------------------------------------------------------->
         <div class="container">
           <label for="uname"><b>Korisničko ime</b></label>
-          <input type="text" placeholder="Unesi e-mail ili korisničko ime.." name="uname" required> <br>
+          <input type="text" v-model="username" placeholder="Unesi e-mail ili korisničko ime.." name="uname" required> <br>
 
 
 
       <!-- ---------------------------------------------------------------- lozinka ---------------------------------------------------------------------->
           <label for="psw"><b>Lozinka</b></label>
-          <input type="password" placeholder="Unesi lozinku..." name="psw" required> <br>
+          <input type="password" v-model="password" placeholder="Unesi lozinku..." name="psw" required> <br>
 
 
 
       <!-- ---------------------------------------------------------------- prijava ---------------------------------------------------------------------->
-          <button type="submit">Prijava</button> <br> <br>
+          <button type="button" @click="signup">Prijava</button> <br> <br>
 
         
 
@@ -112,4 +112,29 @@
 
 </template>
 
-
+<script>
+import { firebase } from "@/firebase";
+export default {
+  name: "Login",
+  data() {
+    return {
+      Email: "",
+      Password: "",
+    };
+  },
+  methods: {
+    signup() {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(this.Email, this.Password)
+        .then(function() {
+          console.log("Uspješna prijava");
+        })
+        .catch(function (error) {
+          console.error("Došlo je do greške", error);
+        });
+        console.log('Nastavak');
+    },
+  },
+};
+</script>

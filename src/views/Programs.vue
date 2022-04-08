@@ -9,7 +9,7 @@
             </div>
             <ul class="sci">
                 <li>
-                    <a href="CircularH">VIDI VIŠE</a>
+                    <router-link to="@/../CircularH">VIDI VISE</router-link>
                 </li>
             </ul>
         </div>
