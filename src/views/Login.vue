@@ -76,7 +76,7 @@
 
     <!-- ------------------------------------------------------- korisničko ime / e-mail ---------------------------------------------------------------->
         <div class="container">
-          <label for="uname"><b>Korisničko ime</b></label>
+          <label for="uname"><b>E-mail</b></label>
           <input type="text" v-model="Email" placeholder="Unesi e-mail.." name="uname" required> <br>
 
 
@@ -140,7 +140,7 @@ export default {
 
         .createUserWithEmailAndPassword(this.Email, this.Password, this.odabir, this.telefon)
         alert("UPJEŠNA PRIJAVA!");
-        
+
         console.log('Nastavak');
     },
   },
