@@ -77,14 +77,23 @@
     <!-- ------------------------------------------------------- korisničko ime / e-mail ---------------------------------------------------------------->
         <div class="container">
           <label for="uname"><b>Korisničko ime</b></label>
-          <input type="text" v-model="username" placeholder="Unesi e-mail ili korisničko ime.." name="uname" required> <br>
+          <input type="text" v-model="Email" placeholder="Unesi e-mail.." name="uname" required> <br>
 
 
 
       <!-- ---------------------------------------------------------------- lozinka ---------------------------------------------------------------------->
           <label for="psw"><b>Lozinka</b></label>
-          <input type="password" v-model="password" placeholder="Unesi lozinku..." name="psw" required> <br>
+          <input type="password" v-model="Password" placeholder="Unesi lozinku..." name="psw" required> <br>
 
+
+      <!-- ---------------------------------------------------------------- trening ---------------------------------------------------------------------->
+          <label for="nname"><b>Trening</b></label>
+          <input type="text" v-model="odabir" placeholder="Unesi trening za koji se želis prijaviti..." name="nname" required>
+
+
+      <!-- ---------------------------------------------------------------- telefon ---------------------------------------------------------------------->
+          <label for="bname"><b>Broj telefona</b></label>
+          <input type="text" v-model="telefon" placeholder="Unesi broj telefona..." name="bname" required>
 
 
       <!-- ---------------------------------------------------------------- prijava ---------------------------------------------------------------------->
@@ -120,19 +129,18 @@ export default {
     return {
       Email: "",
       Password: "",
+      odabir: "",
+      telefon: "",
     };
   },
   methods: {
     signup() {
       firebase
         .auth()
-        .createUserWithEmailAndPassword(this.Email, this.Password)
-        .then(function() {
-          console.log("Uspješna prijava");
-        })
-        .catch(function (error) {
-          console.error("Došlo je do greške", error);
-        });
+
+        .createUserWithEmailAndPassword(this.Email, this.Password, this.odabir, this.telefon)
+        alert("UPJEŠNA PRIJAVA!");
+        
         console.log('Nastavak');
     },
   },
