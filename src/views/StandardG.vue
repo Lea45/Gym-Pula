@@ -12,7 +12,7 @@
             <br> 
             <ul class="login">
                 <li>
-                    <a href="">PRIJAVI SE</a>
+                    <a href="">DODAJ U KOŠARICU!</a>
                 </li>
             </ul>  
         </div>
