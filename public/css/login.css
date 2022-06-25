@@ -1,5 +1,5 @@
  /*----------------------------- Raspored ------------------------------ */
-table,th, td {
+ table,th, td {
   border: 3px solid orange;
   color: black;
   margin: auto;
@@ -17,9 +17,9 @@ h2 {
  
 
  /*----------------------------- LOGIN FORM ------------------------------ */
- input[type=text], input[type=password] {
+ input[type=text], input[type=password], select {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -49,7 +49,6 @@ button:hover {
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
-  position: relative;
 }
 
 .imgcontainer img {
@@ -59,6 +58,7 @@ button:hover {
 
 .container {
   padding: 16px;
+  width: 30%;
 }
 
 .modal {
@@ -79,13 +79,20 @@ button:hover {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
-  width: 80%;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .close {
   position: absolute;
   right: 25px;
-  top: 0;
+  top: 15px;
   color: #000;
   font-size: 35px;
   font-weight: bold;
