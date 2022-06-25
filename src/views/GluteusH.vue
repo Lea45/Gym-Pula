@@ -27,9 +27,7 @@
       <br />
       <ul class="login">
         <li>
-          <button
-            onclick="document.getElementById('id03').style.display='block'"
-          >
+          <button onclick="document.getElementById('id03').style.display='block'" >
             DODAJ U KOŠARICU!
           </button>
         </li>
@@ -100,12 +98,6 @@
           <!-- ---------------------------------------------------------------- prijava ---------------------------------------------------------------------->
           <button type="button" @click="begin">Prijava</button> <br />
           <br />
-
-          <!-- ---------------------------------------------------------------- zapamti me ---------------------------------------------------------------------->
-          <!--<label>
-            <input type="checkbox" checked="checked" name="remember" /> Zapamti
-            me
-          </label>-->
         </div>
 
         <!-- ---------------------------------------------------------------- zatvori ---------------------------------------------------------------------->
@@ -123,3 +115,81 @@
   </div>
 </template>
 
+<style lang="scss">
+@import "@/css/allprograms";
+</style>
+
+<script>
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
+import { auth, db } from "@/firebase.js";
+
+export default {
+  name: "Programs",
+  data() {
+    return {
+      Email: "",
+      Password: "",
+      odabir: "GLUTEUS PROGRAM",
+      telefon: "",
+    };
+  },
+  methods: {
+    begin() {
+      signInWithEmailAndPassword(auth, this.Email, this.Password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          this.saveData();
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          if (error.code == "auth/user-not-found") {
+            console.log("User does not exist! Creating new user...");
+            this.signup();
+          } else {
+            alert("Krivi email ili lozinka!");
+          }
+        });
+    },
+    signup() {
+      createUserWithEmailAndPassword(auth, this.Email, this.Password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          console.log("User created!");
+          this.saveData();
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+        });
+    },
+    async saveData() {
+      // Add a new document in collection "cities"
+      await setDoc(doc(db, "VJEZBE", this.Email), {
+        telefon: this.telefon,
+        vjezba: this.odabir,
+      });
+      console.log("Data saved.");
+      signOut(auth)
+        .then(() => {
+          // Sign-out successful.
+          console.log("User logged out");
+          alert("Uspješno ste prijavili vježbu!");
+        })
+        .catch((error) => {
+          // An error happened.
+        });
+    },
+  },
+};
+</script>
