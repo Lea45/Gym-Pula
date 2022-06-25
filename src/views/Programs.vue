@@ -182,4 +182,88 @@
       </form>
     </div>
   </div>
- 
+  <!-- ---------------------------------------------------------- LOGIN FORM ---------------------------------------------------------------->
+</template>
+
+<style lang="scss">
+@import "@/css/programs";
+</style>
+
+<script>
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
+import { auth, db } from "@/firebase.js";
+
+export default {
+  name: "Programs",
+  data() {
+    return {
+      Email: "",
+      Password: "",
+      odabir: "",
+      telefon: "",
+    };
+  },
+  methods: {
+    kosarica(odabir) {
+      this.odabir = odabir;
+      document.getElementById("id02").style.display = "block";
+    },
+    begin() {
+      signInWithEmailAndPassword(auth, this.Email, this.Password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          this.saveData();
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          if (error.code == "auth/user-not-found") {
+            console.log("User does not exist! Creating new user...");
+            this.signup();
+          } else {
+            alert("Krivi email ili lozinka!");
+          }
+        });
+    },
+    signup() {
+      createUserWithEmailAndPassword(auth, this.Email, this.Password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          console.log("User created!");
+          this.saveData();
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+        });
+    },
+    async saveData() {
+      // Add a new document in collection "cities"
+      await setDoc(doc(db, "VJEZBE", this.Email), {
+        telefon: this.telefon,
+        vjezba: this.odabir,
+      });
+      console.log("Data saved.");
+      signOut(auth)
+        .then(() => {
+          // Sign-out successful.
+          console.log("User logged out");
+          alert("Uspješno ste prijavili vježbu!");
+        })
+        .catch((error) => {
+          // An error happened.
+        });
+    },
+  },
+};
+</script>
