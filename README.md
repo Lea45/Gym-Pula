@@ -25,7 +25,8 @@ https://www.figma.com/file/Tf3I0HN3UbrLZfdyT71IHN/Untitled?node-id=0%3A1
 ```
 ### Kratki opis funkcionalnosti
 ```
-Funkcija oplikacije je da olakša interakciju između klijenta i teretane na način da se digitalizira prijava i odabir treninga kao i slikoviti opis istih. Klijent odnosno korisnik ima opciju da prođe kroz sav sadržaj aplikacije kako bi se što bolje upoznao sa teretanom GYM PULA. Nakon odabira paketa treninga klijent gleda raspored treninga i dolazi na isti gdje započinje svoje vježbe sa profesionalnim trenerima. Klijent ima i opciju registracije preko posebne forme gdje radnici u teretani dobivaju klijentove podatke.
+Funkcija aplikacije je privući i motivirati sve ljude željne promjene prilagodbi zdravome načinu života. 
+Ulaskom na našu stranicu, klijent, odnosno korisnik ima opciju razgledati treninge koje nudimo te odabarti onaj koji najviše odgovara njegovim/njenim osobnim potrebama. Svaki trening opisan je u kratkim crtama. Korisnici kada plate određeni trenig, automatski su upisani u naš sustav. S obzirom na njihovo vrijeme, nudimo trenige koji se održavaju u odeređeno vrijeme kako bi svima bilo lakše uspostaviti vezu s teretanom i svojim privatnim životom.
 ```
 ### Org.
 ```
